@@ -1,23 +1,49 @@
 /*font-family: 'DM Serif Display', serif;
 font-family: "Playfair Display", serif;
 font-family: "Rouge Script", cursive;*/
-
+:root {
+  --main-color: #05172d;
+  --heading-font-family: "DM Serif Display", serif;
+  --default-font-family: "Playfair Display", serif;
+}
 body {
-  background: black;
+  background: var(--main-color);
+  font-family: var(--default-font-family);
 }
 h1 {
   color: white;
-  font-family: "DM Serif Display", serif;
+  font-family: var(--heading-font-family);
+  font-size: 95px;
 }
-p {
+p,
+h2 {
   color: white;
-  font-family: "Playfair Display", serif;
+  font-family: var(--default-font-family);
 }
 .navbar-brand {
   font-family: "Rouge Script", cursive;
   color: white;
-  font-size: 50px;
+  font-size: 38px;
 }
 footer {
   color: white;
+}
+
+.hero {
+  text-align: center;
+
+  padding: 140px 20px;
+}
+.hero p {
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0;
+}
+.hero h2 {
+  opacity: 70%;
+  font-size: 25px;
+}
+.btn {
+  border-radius: 4px;
+  padding: 12px 20px;
 }
