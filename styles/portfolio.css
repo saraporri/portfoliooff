@@ -3,6 +3,7 @@ font-family: "Playfair Display", serif;
 font-family: "Rouge Script", cursive;*/
 :root {
   --main-color: #05172d;
+  --secondary-color: #0a203b;
   --heading-font-family: "DM Serif Display", serif;
   --default-font-family: "Playfair Display", serif;
   --fancy-font-family: "Rouge Script", cursive;
@@ -70,16 +71,30 @@ p {
   border-radius: 4px;
   padding: 12px 20px;
   box-shadow: var(--shadow);
-  background-color: #0348b3;
+  background-color: var(--secondary-color);
+  border-color: white;
+}
+.btn:hover {
+  color: var(--secondary-color);
+  font-weight: bolder;
+  background-color: white;
+  border-color: var(--secondary-color);
 }
 .btn-2 {
   border-radius: 4px;
   padding: 12px 20px;
   color: var(--main-color);
   background-color: white;
+
   font-weight: bolder;
   box-shadow: var(--shadow);
-  transition: all 150ms;
+  transition: all 150ms ease-in-out;
+}
+.btn-2:hover {
+  color: white;
+  text-decoration: none;
+  background-color: var(--secondary-color);
+  font-weight: lighter;
 }
 .content-container {
   padding: 140px 20px;
@@ -119,4 +134,31 @@ img {
 }
 footer {
   text-align: center;
+  margin-top: 200px;
+  background: rgb(15, 43, 77);
+  background: linear-gradient(
+    0deg,
+    rgba(15, 43, 77, 1) 55%,
+    rgba(5, 23, 45, 1) 94%
+  );
+}
+footer .contact-box {
+  padding: 20px 100px;
+}
+footer .email-link {
+  text-decoration: none;
+  color: white;
+  transition: all 150ms ease-in-out;
+}
+footer .social-links a {
+  margin: 20px;
+  color: white;
+  font-size: 18px;
+
+  padding: 10px;
+  transition: all 150ms ease-in-out;
+}
+.email-link:hover,
+.social-links a:hover {
+  opacity: 30%;
 }
