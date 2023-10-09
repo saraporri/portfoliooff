@@ -26,7 +26,6 @@ h1 {
 }
 p {
   font-size: 18px;
-
   line-height: 30px;
 }
 .navbar {
@@ -80,23 +79,26 @@ p {
   box-shadow: var(--shadow);
   transition: all 150ms;
 }
-.about-me {
+.content-container {
   padding: 140px 20px;
   text-align: center;
   padding: 0;
 }
-.about-me-content {
+.content {
   margin: 20px;
 }
-.about-me h1 {
+.content p {
+  font-size: 14px;
+}
+.content-container h1 {
   font-size: 64px;
   line-height: 1;
 }
-.about-me h2 {
+.content-container h2 {
   opacity: 70%;
-  font-size: 28px;
+  font-size: 26px;
 }
-.about-me p {
+.content-container p {
   font-size: 18px;
 }
 .project-container {
@@ -109,7 +111,7 @@ p {
 
 img {
   max-width: 100%;
-  border-radius: 5px;
+  border-radius: 7px;
   box-shadow: var(--shadow);
 }
 footer {
