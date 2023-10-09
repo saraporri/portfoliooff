@@ -29,6 +29,9 @@ p {
   font-size: 18px;
   line-height: 30px;
 }
+nav {
+  min-height: 90px;
+}
 .navbar {
   background: rgb(255, 255, 255);
   background: linear-gradient(
@@ -42,10 +45,39 @@ p {
   color: white;
   font-size: 38px;
   font-family: var(--fancy-font-family);
+  transition: all 200ms ease-in-out;
+}
+.navbar-brand:hover {
+  color: white;
+  font-weight: bolder;
+  font-size: 40px;
 }
 .navbar-toggler-icon {
   color: white;
 }
+.nav-link {
+  color: white;
+  transition: all 200ms ease-in-out;
+}
+.nav-link:hover {
+  color: white;
+  font-weight: bolder;
+  font-size: 17px;
+}
+.nav-link-active {
+  margin: 10px;
+  font-weight: bolder;
+  color: white;
+  transition: all 200ms ease-in-out;
+  font-size: 17px;
+}
+.nav-link-active:hover {
+  text-decoration: none;
+  color: white;
+  opacity: 70%;
+  font-size: 16px;
+}
+
 .sara {
   display: inline;
   font-family: var(--fancy-font-family);
@@ -73,6 +105,7 @@ p {
   box-shadow: var(--shadow);
   background-color: var(--secondary-color);
   border-color: white;
+  transition: all 200ms ease-in-out;
 }
 .btn:hover {
   color: var(--secondary-color);
@@ -88,7 +121,7 @@ p {
 
   font-weight: bolder;
   box-shadow: var(--shadow);
-  transition: all 150ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 .btn-2:hover {
   color: white;
@@ -132,6 +165,9 @@ img {
   border-radius: 7px;
   box-shadow: var(--shadow);
 }
+.sarapic {
+  max-width: 80%;
+}
 footer {
   text-align: center;
   margin-top: 200px;
@@ -148,7 +184,7 @@ footer .contact-box {
 footer .email-link {
   text-decoration: none;
   color: white;
-  transition: all 150ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 footer .social-links a {
   margin: 20px;
@@ -156,7 +192,12 @@ footer .social-links a {
   font-size: 18px;
 
   padding: 10px;
-  transition: all 150ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+footer .final {
+  font-size: 12px;
+  padding: 70px 100px;
+  font-weight: lighter;
 }
 .email-link:hover,
 .social-links a:hover {
