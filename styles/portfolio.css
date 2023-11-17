@@ -167,6 +167,11 @@ img {
 }
 .sarapic {
   max-width: 80%;
+  transition: all 1s;
+}
+.sarapic:hover {
+  border-radius: 50% 50%;
+  scale: 1.2;
 }
 footer {
   text-align: center;
