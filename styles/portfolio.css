@@ -171,6 +171,11 @@ img {
 img:hover {
   scale: 1.1;
 }
+.skills {
+  max-width: 40%;
+  padding: 0;
+  border-radius: 10px;
+}
 .sarapic {
   max-width: 80%;
   transition: all 1s;
