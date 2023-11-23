@@ -184,6 +184,18 @@ img:hover {
   border-radius: 50% 50%;
   scale: 1.2;
 }
+.coming-soon {
+  font-size: 60px;
+
+  text-shadow: 0 0 10px white;
+}
+.coming-soon-kitty {
+  box-shadow: none;
+  max-width: 40%;
+}
+.coming-soon-kitty:hover {
+  scale: none;
+}
 footer {
   text-align: center;
   margin-top: 200px;
